@@ -1,3 +1,5 @@
+# Original script from http://stackoverflow.com/questions/3898574/google-search-using-python-script
+
 import urllib2
 import json
 query = raw_input ( 'Query: ' )
@@ -11,6 +13,6 @@ results = list1['responseData'] ['results']
 for result in results:
     title = result['title']
     code = title.split()
-    url = result['url']   # was URL in the original and that threw a name error exception
+    url = result['url']   
     print code[4]
     print (title + url)
