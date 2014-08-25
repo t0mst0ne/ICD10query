@@ -15,5 +15,8 @@ for result in results:
     code = title.split()
     url = result['url']   
     print code[4]
-    print (title + url)
+    print 
+    print title
+    print 
+    print url
     print
